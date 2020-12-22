@@ -14,7 +14,7 @@ fn main() {
 
     // &v[1..] turns vec into slice
     println!("v is {:?}", v);
-    let slice = &v[1..];
+    let slice = &v[..];
     println!("slice is {:?}", slice);
 
     // Use vec! as shorthand for initialization 

@@ -1,5 +1,5 @@
 fn main() {
-    let ints = [1,2,3,4,5];
+    let ints: [i32; 5] = [1,2,3,4,5];
     let slice = &ints;
     // Using .get() on slices returns Some if we use a valid index, None if not
     let first = slice.get(0);

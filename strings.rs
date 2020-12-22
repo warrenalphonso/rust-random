@@ -2,8 +2,8 @@
 // literals which shouldn't be dynamic. Rust allows for both of these. 
 
 fn main() {
-    let text = "hey what's up"; // string slice 
-    let s = text.to_string(); // string literal 
+    let text = "hey what's up"; // string slice: &str
+    let s = text.to_string(); // string literal: String
     println!("{}", text);
     println!("{}", s); 
     // We can coerce s into slice via & 
