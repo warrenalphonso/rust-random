@@ -19,10 +19,9 @@ fn main() {
         })
         .add_plugins(DefaultPlugins)
         .add_plugin(PickingPlugin)
-        .add_plugin(DebugPickingPlugin)
+        .add_plugin(BoardPlugin)
+        .add_plugin(PiecesPlugin)
         .add_startup_system(setup.system())
-        .add_startup_system(create_board.system())
-        .add_startup_system(create_pieces.system()) 
         .run();
 }
 
